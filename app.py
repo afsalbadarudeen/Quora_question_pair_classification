@@ -41,9 +41,11 @@ if st.button("Find"):
     result = model.predict(query)[0]
 
     if result:
-        st.header("Duplicate Questions")
+        st.markdown("<h2 style='text-align: left; color: white;'>Duplicate Questions</h2>",
+                    unsafe_allow_html=True)
     else:
-        st.header("Non Duplicate Questions")
+        st.markdown("<h2 style='text-align: left; color: white;'>Non Duplicate Questions</h2>",
+                    unsafe_allow_html=True)
 
 
     # Add a note
