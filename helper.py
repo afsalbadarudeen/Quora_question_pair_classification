@@ -1,5 +1,5 @@
 import re
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
 import distance
 from fuzzywuzzy import fuzz
 import pickle
@@ -276,8 +276,8 @@ def preprocess(q):
     q = q.replace("'ll", " will")
 
     # Removing HTML tags
-    q = BeautifulSoup(q)
-    q = q.get_text()
+    #q = BeautifulSoup(q)
+   # q = q.get_text()
 
     # Remove punctuations
     pattern = re.compile('\W')
