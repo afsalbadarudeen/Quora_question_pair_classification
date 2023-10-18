@@ -8,12 +8,20 @@ page_bg_img = '''
 .stApp {
 background-image: url("https://wallpapercave.com/wp/wp6957320.jpg");
 background-size: cover;
-color: yellow;
+color: white;
 }
 h1, .element-container .markdown-text-container p, label, .stTextInput label span, .stTextInput input, .element-container .stMarkdown h1 {
-color: yellow !important;
+color: white !important;
 }
 
+.stTextInput > div > div > input {
+color: black !important;
+background-color: white !important;
+}
+
+button {
+color: blue !important;
+}
 
 </style>
 '''
@@ -22,8 +30,8 @@ color: yellow !important;
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 model = pickle.load(open('model1.pkl', 'rb'))
+st.markdown("<h1 style='text-align: center; color: white;'>Duplicate question pairs</h1>", unsafe_allow_html=True)
 
-st.header("Duplicate question pairs")
 
 q1 = st.text_input("Input your question 1")
 q2 = st.text_input("Input your question 2")
