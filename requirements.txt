@@ -3,3 +3,4 @@ scikit-learn
 fuzzywuzzy
 distance
 bs4
+gensim
