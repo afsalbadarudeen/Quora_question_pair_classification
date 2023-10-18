@@ -4,3 +4,4 @@ fuzzywuzzy
 distance
 bs4
 gensim
+xgboost
